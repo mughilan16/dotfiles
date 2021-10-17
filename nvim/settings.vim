@@ -53,4 +53,3 @@ cmap w!! w !sudo tee %
 set shiftwidth=4
 
 set scrolloff=6
-highlight NvimTreeFolderIcon guibg=blue
