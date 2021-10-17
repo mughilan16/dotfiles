@@ -25,4 +25,5 @@ luafile ~/.config/nvim/lsp/tsserver.lua
 luafile ~/.config/nvim/lsp/cssls.lua
 luafile ~/.config/nvim/lsp/html.lua
 source ~/.config/nvim/plugin_config/snippets.vim
+source ~.config/nvim/plugin_config/codi.vim
 
