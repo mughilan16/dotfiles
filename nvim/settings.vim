@@ -40,7 +40,7 @@ set noswapfile
 
 " Undo Tree
 set nobackup
-set undodir=~/.config/nvim/undodir
+set undodir=~/.vim/undodir/
 set undofile
 set signcolumn=number
 
