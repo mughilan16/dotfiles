@@ -14,6 +14,7 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'metakirby5/codi.vim'
 
 " Look
 Plug 'kyazdani42/nvim-web-devicons'
