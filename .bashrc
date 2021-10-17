@@ -88,7 +88,8 @@ fi
 
 # some more ls aliases
 alias ll='ls -alF'
-alias la='ls -A'
+alias la='ls -a'
+alias lla='ls -al'
 alias l='ls'
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -141,3 +142,18 @@ export PATH=$PATH~/.cargo/bin/
 export PS1="\[\033[38;5;39m\][\T]\[$(tput sgr0)\]\[\033[38;5;44m\][\[$(tput sgr0)\]\[\033[38;5;174m\]\u\[$(tput sgr0)\]\[\033[38;5;39m\]@\[$(tput sgr0)\]\[\033[38;5;43m\]\H]\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;211m\]\W\[$(tput sgr0)\]\[\033[38;5;109m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
 
 setxkbmap us
+
+# Codi wrapper
+codi() {
+   local syntax="${1:-python}"
+   shift
+   nvim -c \
+     "let g:startify_disable_at_vimenter = 1 |\
+     set bt=nofile ls=0 noru nonu nornu |\
+     hi CodiVirtualText guifg=red
+     hi ColorColumn ctermbg=NONE |\
+     hi VertSplit ctermbg=NONE |\
+     hi NonText ctermfg=0 |\
+     Codi $syntax" "$@"
+}
+
