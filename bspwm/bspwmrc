@@ -26,4 +26,7 @@ killall compton
 # AutoStart
 nitrogen --restore
 compton
-polybar
+
+# $HOME/.config/polybar/launch.sh
+polybar example
+
