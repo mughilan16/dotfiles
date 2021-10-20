@@ -71,3 +71,4 @@ nnoremap <leader>bd <cmd>bdelete<cr>
 
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
+
