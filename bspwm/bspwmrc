@@ -28,5 +28,5 @@ killall compton
 nitrogen --restore &
 compton & 
 
-~/.config/polybar.old/launch.sh &
+~/.config/polybar/launch.sh &
 
