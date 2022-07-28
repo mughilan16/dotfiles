@@ -2,30 +2,29 @@
 
 sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d 1: 2: 3: 4:ﭮ 5: 6:嗢
 
-bspc config border_width         1
-bspc config window_gap           0
+bspc config border_width         2
+bspc config window_gap          12
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-bspc config top_padding 4
+
+bspc config focused_border_color \#9d7cd8
+bspc config normal_border_color \#32344A
+
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
-bspc rule -a mpv desktop='^4' follow=on state=fullscreen
+bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-# Settings
-setxkbmap us
+bspc config top_padding 0
+override-redirect = true
 
-# Killing before start
-killall compton
-
-# AutoStart
+# Auto Start
+compton --config ~/.config/compton/compton.conf &
 nitrogen --restore &
-compton & 
-
-~/.config/polybar/launch.sh &
-
+redshift &
+$HOME/.config/polybar/launch.sh &

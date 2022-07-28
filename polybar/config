@@ -17,23 +17,28 @@
 ;==========================================================
 
 [colors]
-background = #282C34
-background-alt = #333842
-foreground = #C5C8C6
-primary = #C678DD
-secondary = #98C379
-alert = #E06C75
-disabled = #ABB2BF
+background = #24283b
+background-alt = #292e42
+foreground = #c0caf5
+primary = #9d7cd8
+cpu = #9699a8
+memory = #e0af68
+vol = #9ece6a
+secondary = #8ABEB7
+alert = #A54242
+disabled = #707880
 
 [bar/example]
 width = 100%
-height = 2.5%
-radius = 0
+height = 24pt
+; radius = 6
+
+; dpi = 96
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
+line-size = 2pt
 
 border-size = 0
 border-color = #00000000
@@ -46,23 +51,23 @@ module-margin = 1
 separator = |
 separator-foreground = ${colors.disabled}
 
-font-0 = "JetBrains Mono;2"
+font-0 = SpaceMono Nerd Font;2
 
 modules-left = xworkspaces xwindow
-modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth date
+modules-right = pulseaudio memory cpu wlan date
 
 cursor-click = pointer
 cursor-scroll = ns-resize
 
 enable-ipc = true
 
-; tray-position = right
+tray-position = right
 
 ; wm-restack = generic
 wm-restack = bspwm
 ; wm-restack = i3
 
-override-redirect = false
+; override-redirect = true
 
 [module/xworkspaces]
 type = internal/xworkspaces
@@ -74,7 +79,6 @@ label-active-padding = 1
 
 label-occupied = %name%
 label-occupied-padding = 1
-label-occupied-underline= ${colors.secondary}
 
 label-urgent = %name%
 label-urgent-background = ${colors.alert}
@@ -103,7 +107,7 @@ label-unmounted-foreground = ${colors.disabled}
 type = internal/pulseaudio
 
 format-volume-prefix = "VOL "
-format-volume-prefix-foreground = ${colors.primary}
+format-volume-prefix-foreground = ${colors.vol}
 format-volume = <label-volume>
 
 label-volume = %percentage%%
@@ -126,15 +130,17 @@ label-indicator-background = ${colors.secondary}
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "RAM:"
-format-prefix-foreground = ${colors.primary}
+format-prefix = " "
+format-prefix-foreground = ${colors.memory}
 label = %percentage_used:2%%
+
+
 
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU:"
-format-prefix-foreground = ${colors.primary}
+format-prefix = " "
+format-prefix-foreground = ${colors.cpu}
 label = %percentage:2%%
 
 [network-base]
@@ -147,7 +153,7 @@ label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
 [module/wlan]
 inherit = network-base
 interface-type = wireless
-label-connected = %{F#F0C674}%ifname%%{F-} %essid% %local_ip%
+label-connected = 直 %essid%
 
 [module/eth]
 inherit = network-base
@@ -168,4 +174,6 @@ label-foreground = ${colors.primary}
 screenchange-reload = true
 pseudo-transparency = true
 
+
 ; vim:ft=dosini
+
