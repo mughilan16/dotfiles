@@ -1,0 +1,131 @@
+----- This file can be loaded by calling `lua require('plugins')` from your init.vim
+---
+----- Only required if you have packer configured as `opt`
+---vim.cmd [[packadd packer.nvim]]
+---
+---return require('packer').startup(function(use)
+---  -- Packer can manage itself
+---  use 'wbthomason/packer.nvim'
+---  -- Post-install/update hook with neovim command
+---  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+---  use("nvim-treesitter/nvim-treesitter-context");
+---  use {
+---    "ThePrimeagen/harpoon",
+---    branch = "harpoon2",
+---    requires = { { "nvim-lua/plenary.nvim" } }
+---  }
+---  use "catppuccin/nvim"
+---  use {
+---    'nvim-telescope/telescope.nvim', tag = '0.1.2',
+---    -- or                            , branch = '0.1.x',
+---    requires = { { 'nvim-lua/plenary.nvim' } }
+---  }
+---  use "xiyaowong/transparent.nvim"
+---  use "folke/trouble.nvim"
+---  use "tpope/vim-fugitive"
+---  use {
+---    'VonHeikemen/lsp-zero.nvim',
+---    branch = 'v1.x',
+---    requires = {
+---      -- LSP Support
+---      { 'neovim/nvim-lspconfig' },
+---      { 'williamboman/mason.nvim' },
+---      { 'williamboman/mason-lspconfig.nvim' },
+---
+---      -- Autocompletion
+---      { 'hrsh7th/nvim-cmp' },
+---      { 'hrsh7th/cmp-buffer' },
+---      { 'hrsh7th/cmp-path' },
+---      { 'saadparwaiz1/cmp_luasnip' },
+---      { 'hrsh7th/cmp-nvim-lsp' },
+---      { 'hrsh7th/cmp-nvim-lua' },
+---
+---      -- Snippets
+---      { 'L3MON4D3/LuaSnip' },
+---      { 'rafamadriz/friendly-snippets' },
+---    }
+---  }
+---  use "alvan/vim-closetag"
+---  use "ray-x/go.nvim"
+---  use({ 'rose-pine/neovim', as = 'rose-pine' })
+---  use 'malbertzard/inline-fold.nvim'
+---  use "tjdevries/gruvbuddy.nvim"
+---  use "tjdevries/colorbuddy.nvim"
+---  use 'svrana/neosolarized.nvim'
+---  use 'windwp/nvim-ts-autotag'
+---  use 'windwp/nvim-autopairs'
+---  use 'lewis6991/gitsigns.nvim'
+---  use 'MunifTanjim/prettier.nvim'
+---  use 'nvim-telescope/telescope-file-browser.nvim'
+---  use('jose-elias-alvarez/null-ls.nvim')
+---  use "folke/tokyonight.nvim"
+---  use "uloco/bluloco.nvim"
+---  use "rktjmp/lush.nvim"
+---  use "mhartington/oceanic-next"
+---  use "projekt0n/caret.nvim"
+---  use 'simrat39/rust-tools.nvim'
+---  use "epwalsh/obsidian.nvim"
+---  use "nyoom-engineering/oxocarbon.nvim"
+---  use {
+---    "themaxmarchuk/tailwindcss-colors.nvim",
+---    -- load only on require("tailwindcss-colors")
+---    module = "tailwindcss-colors",
+---    -- run the setup function after plugin is loaded
+---    config = function()
+---      -- pass config options here (or nothing to use defaults)
+---      require("tailwindcss-colors").setup()
+---    end
+---  }
+---  use {
+---    "max397574/colortils.nvim",
+---    cmd = "Colortils",
+---    config = function()
+---      require("colortils").setup()
+---    end,
+---  }
+---  use 'norcalli/nvim-colorizer.lua'
+---  use 'sainnhe/everforest'
+---  use 'sainnhe/gruvbox-material'
+---  use { "akinsho/toggleterm.nvim", tag = '*', config = function()
+---    require("toggleterm").setup()
+---  end }
+---  use "mfussenegger/nvim-jdtls"
+---  use {
+---    'xiantang/darcula-dark.nvim',
+---    requires = { "nvim-treesitter/nvim-treesitter" }
+---  }
+---  -- If you are using Packer
+---  use 'rmehri01/onenord.nvim'
+---  -- If you are using Packer
+---  use 'shaunsingh/nord.nvim'
+---  use 'sainnhe/sonokai'
+---  use "lukas-reineke/indent-blankline.nvim"
+---  use { 'sourcegraph/sg.nvim', run = 'nvim -l build/init.lua' }
+---  use 'tjdevries/express_line.nvim'
+---  use { 'j-hui/fidget.nvim', tag = 'legacy' }
+---  use "rebelot/kanagawa.nvim"
+---
+---  use {
+---    "mcchrish/zenbones.nvim",
+---    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+---    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+---    -- In Vim, compat mode is turned on as Lush only works in Neovim.
+---    requires = "rktjmp/lush.nvim"
+---  }
+---  use "AlexvZyl/nordic.nvim"
+---  use "doums/darcula"
+---  use "savq/melange-nvim"
+---  use "EdenEast/nightfox.nvim"
+---  use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
+---  use "p00f/alabaster.nvim"
+---  use "aktersnurra/no-clown-fiesta.nvim"
+---  use "habamax/vim-godot"
+---  use "nvim-tree/nvim-tree.lua"
+---  use "stevearc/aerial.nvim"
+---  use "wakatime/vim-wakatime"
+---  use "andweeb/presence.nvim"
+---  use 'mfussenegger/nvim-dap'
+---  use 'antonk52/lake.nvim'
+---  use "craftzdog/solarized-osaka.nvim"
+---  use "ThePrimeagen/vim-apm"
+--end)
