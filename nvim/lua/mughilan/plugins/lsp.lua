@@ -104,10 +104,21 @@ return {
       require 'lspconfig'.lua_ls.setup {}
       require 'lspconfig'.tsserver.setup {}
       require 'lspconfig'.gopls.setup {}
+      require 'lspconfig'.templ.setup {}
       require 'lspconfig'.pyright.setup {}
       require 'lspconfig'.astro.setup {}
       require 'lspconfig'.tailwindcss.setup {}
       require 'lspconfig'.lemminx.setup {}
+      require 'lspconfig'.csharp_ls.setup {}
+      require 'lspconfig'.elixirls.setup {
+        -- Unix
+        cmd = { "/home/mughil/.local/share/nvim/mason/bin/elixir-ls" },
+      }
+      require 'lspconfig'.html.setup {}
+      require 'lspconfig'.cssls.setup {}
+      require 'lspconfig'.volar.setup {}
+      require 'lspconfig'.vuels.setup {}
+
       require 'lspconfig'.rust_analyzer.setup {
         settings = {
           ['rust-analyzer'] = {
@@ -118,11 +129,8 @@ return {
         }
       }
 
-      require'lspconfig'.zls.setup{}
-      require'lspconfig'.clangd.setup{}
-      require 'lspconfig'.elixirls.setup {
-        cmd = { "/home/mughilan/Tools/elixir-lsp/language_server.sh" },
-      }
+      require 'lspconfig'.zls.setup {}
+      require 'lspconfig'.clangd.setup {}
       require 'mason'.setup {}
     end
   }

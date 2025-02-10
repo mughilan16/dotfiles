@@ -16,6 +16,6 @@ return {
         dotfiles = true,
       },
     })
-    vim.cmd[[":NvimTreeOpen<CR>"]]
+    vim.cmd [[":NvimTreeOpen<CR>"]]
   end
 }

@@ -4,8 +4,11 @@ vim.g.mapleader = " "
 
 key.set("n", "<leader>tf", "ToggleTerm")
 
-key.set("n", "<leader>fg", vim.cmd.Ex)
-key.set("n", "<leader>n", ":NvimTreeToggle<CR>")
+key.set("n", "<leader>fp", vim.cmd.Ex)
+key.set("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+--key.set("n", "<leader>n", ":NvimTreeToggle<CR>")
+key.set("n", "<C-n>", ":e .<CR>")
+
 key.set("n", "<C-f>", "<cmd>silent !tmux neww /home/mughil/personal/tmux-scripts/tmux-sessionizer.sh<CR>")
 
 key.set("v", "J", ":m '>+1<CR>gv=gv")

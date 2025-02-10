@@ -19,7 +19,7 @@ return {
         -- Default configuration for telescope goes here:
         -- config_key = value,
         -- theme = "dropdown",
-        selection_caret = "|",
+        selection_caret = "• ",
         prompt_prefix = "> ",
         layout_strategy = "horizontal",
         layout_config = {

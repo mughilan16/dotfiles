@@ -9,8 +9,8 @@ return {
         'SignColumn', 'CursorLineNr', 'EndOfBuffer', 'GitSignsAdd', 'GitSignsChange', 'GitSignsUntracked',
         'GitSignsDelete', 'NvimTreeNormal'
       },
-      extra_groups = {},                     -- table: additional groups that should be cleared
-      exclude_groups = { "TelescopePromptNormal" }, -- table: groups you don't want to clear
+      extra_groups = {"TelescopeNormal", "TelescopePrompt", "TelescopePromptBorder", "TelescopeBorder", "TelescopePromptTitle"},                     -- table: additional groups that should be cleared
+      exclude_groups = {  }, -- table: groups you don't want to clear
     })
   end
 }

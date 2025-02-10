@@ -3,11 +3,11 @@ local set = vim.opt
 set.nu = true
 set.relativenumber = true
 
-set.tabstop = 2
-set.softtabstop = 2
-set.shiftwidth = 2
+set.tabstop = 4
+set.softtabstop = 4
+set.shiftwidth = 4
 set.expandtab = true
-set.cursorline= true
+set.cursorline= false
 set.pumheight=8
 set.guicursor = ""
 

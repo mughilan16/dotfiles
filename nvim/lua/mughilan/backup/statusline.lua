@@ -172,6 +172,6 @@ return {
       end,
     }
 
-    vim.cmd [[highlight StatusLine guibg=none]]
+    -- vim.cmd [[highlight StatusLine guibg=none]]
   end
 }
